@@ -1,10 +1,20 @@
 <!DOCTYPE html>
+$def with (post,form)
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Edit Page</title>
 </head>
 <body>
+  <h1>Edit $form.d.title</h1>
 
+  <form action="" method="post">
+      $:form.render()
+  </form>
+
+  <h2>Delete post</h2>
+  <form action="/delete/$post.id" method="post">
+      <input type="submit" value="Delete post" />
+  </form>
 </body>
 </html>

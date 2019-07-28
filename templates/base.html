@@ -1,10 +1,21 @@
 <!DOCTYPE html>
+$def with (page)
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>My Blog</title>
+    <style>
+        #menu {
+            width: 200px;
+            float: right;
+        }
+    </style>
 </head>
 <body>
-
+  <ul id="menu">
+      <li><a href="/">Home</a> </li>
+      <li><a href="/new">New Post</a> </li>
+  </ul>
+  $:page
 </body>
 </html>

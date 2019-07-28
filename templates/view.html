@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>View Page</title>
 </head>
 <body>
+  $def with (post)
+  <h1>$post.title</h1>
+  $datestr(post.posted_on)<br />
 
+  $post.content
 </body>
 </html>
